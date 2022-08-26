@@ -143,12 +143,16 @@ function addEngineer() {
     });
   }
 
-  function htmlBuilder () {
-    console.log("Great Success!! Profile generated")
-    fs.writeFileSync(outputPath, generateTeam(teamOutput), "UTF-8")
-}
+  const createHTMLFile = (htmlPage) => {
+    if (!fs.existsSync(OUTPUT_DIR)) {
+        fs.mkdirSync(OUTPUT_DIR);
+    }
 
-createTeam();
+    fs.writeFile(outputPath, htmlPage, "utf-8", (err) => {
+        if(err) throw err;
+        console.log(`Great success! See profile at ${outputPath}`)
+    });
+}
 
 }
 
