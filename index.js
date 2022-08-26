@@ -33,7 +33,9 @@ function runApp () {
         case "Intern":
           addIntern();
           break;
-
+        
+          default:
+          htmlBuilder();
       }
     })
   }
@@ -141,18 +143,13 @@ function addEngineer() {
     });
   }
 
-  const createHTMLFile = (htmlPage) => {
-    if (!fs.existsSync(OUTPUT_DIR)) {
-        fs.mkdirSync(OUTPUT_DIR);
-    }
-
-    fs.writeFile(outputPath, htmlPage, "utf-8", (err) => {
-        if(err) throw err;
-        console.log(`Success! See Team Profile Page at ${outputPath}`)
-    });
+  function htmlBuilder () {
+    console.log("Great Success!! Profile generated")
+    fs.writeFileSync(outputPath, generateTeam(teamOutput), "UTF-8")
 }
-
 
 createTeam();
+
 }
+
 runApp();
