@@ -43,7 +43,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img width="1512" alt="Screen Shot 2022-08-15 at 11 39 22 PM" src="https://user-images.githubusercontent.com/99697175/184794342-978227ec-7631-4b05-9f5c-bfae915cb014.png">
 
 Your challenge is to build a Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. Because testing is key to making code maintainable, you’ll also write unit tests for each part of your code and ensure that it passes all of them.
 
@@ -80,7 +79,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/lkocaj/10-team-generator
    ```
 3. Install NPM packages
    ```sh
@@ -124,6 +123,6 @@ Lawrence Kocaj
 
 Project Link: https://github.com/LKocaj/10-team-generator
 <br>
-Youtube: [https://youtu.be/cBaPNBFiw4Y](https://www.youtube.com/watch?v=rAeunpgjR3E&ab_channel=KocajCode)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
